@@ -1,0 +1,3 @@
+target = "~/.config"
+dependencies = ["setup"]
+post_hook = ["paru", "-S", "starship"]

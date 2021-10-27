@@ -1,0 +1,3 @@
+target = "~/.config/paru"
+pre_hook = ["install.sh"]
+ingore = ["install.sh"]

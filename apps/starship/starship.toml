@@ -1,0 +1,112 @@
+add_newline = true
+format = """
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$hg_branch\
+$custom\
+$env_var\
+$cmd_duration\
+$line_break\
+$status\
+$character\
+"""
+
+[directory]
+read_only = " "
+style = "bold bright-blue"
+truncate_to_repo = false
+truncation_length = 5
+truncation_symbol = "../"
+
+[git_branch]
+symbol = " "
+style = "green"
+
+[hg_branch]
+symbol = " "
+
+[git_status]
+conflicted = "[ﲅ ](red)"
+ahead = "[](bright-cyan)" # 
+behind = "[](bright-cyan)" # 
+diverged = "[ ](bright-cyan)"
+untracked = "️[ ](bright-magenta)"
+stashed = " "
+modified = "[ ](bright-yellow)"
+staged = "[](bright-green)"
+deleted = "[](bright-red)"
+renamed = "[](bright-yellow)"
+style = "bright-white"
+format = "$all_status$ahead_behind    "
+
+[cmd_duration]
+min_time = 5_000
+show_notifications = true
+min_time_to_notify = 600_000
+
+[aws]
+symbol = "  "
+
+[conda]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[docker_context]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[memory_usage]
+symbol = " "
+
+[nim]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+[package]
+symbol = " "
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[python]
+symbol = " "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[scala]
+symbol = " "
+
+[shlvl]
+symbol = " "
+
+[swift]
+symbol = "ﯣ "

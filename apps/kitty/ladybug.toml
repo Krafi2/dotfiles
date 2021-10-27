@@ -1,0 +1,3 @@
+target = "~/.config/kitty"
+post_hook = ["paru", "-S", "kitty"]
+dependencies = ["setup"]
