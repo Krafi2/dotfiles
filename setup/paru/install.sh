@@ -1,4 +1,4 @@
-sudo pacman -S --needed base-devel
+#!/bin/bash
 git clone https://aur.archlinux.org/paru-bin.git /tmp/paru
 cd /tmp/paru
-makepkg -si
+makepkg -si --needed

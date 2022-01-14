@@ -1,3 +1,4 @@
 target = "~/.config/paru"
-pre_hook = ["install.sh"]
-ingore = ["install.sh"]
+link = ["*", "!install.sh"]
+deps = ["/setup/devel"]
+hook.pre = {file = "install.sh"}

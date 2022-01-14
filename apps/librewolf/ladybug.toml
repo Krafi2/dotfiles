@@ -1,0 +1,2 @@
+deps = ["/setup"]
+hook.pre = "sudo pacman -S --needed librewolf-bin"

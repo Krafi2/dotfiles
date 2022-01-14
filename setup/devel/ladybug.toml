@@ -1,0 +1,1 @@
+hook.pre = "sudo pacman -S --needed base-devel"
