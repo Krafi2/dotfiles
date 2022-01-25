@@ -1,3 +1,2 @@
 target = "~/.config/kitty"
-hook.pre = "paru -S kitty --needed"
 deps = ["/setup"]

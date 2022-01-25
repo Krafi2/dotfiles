@@ -1,3 +1,2 @@
 target = "~/.var/app/io.gitlab.librewolf-community/.librewolf"
 deps = ["/setup"]
-hook.pre = "flatpak install librewolf"

@@ -1,3 +1,2 @@
 target = "~/.config/fish"
 deps = ["/setup"]
-hook.pre = "paru -S fish --needed"
