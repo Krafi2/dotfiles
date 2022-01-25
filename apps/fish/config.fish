@@ -12,6 +12,8 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+set -gx PATH "$HOME/.cargo/bin" $PATH;
+
 ## Alias section
 alias please='eval "sudo $history[1]";history delete --exact --case-sensitive please' # Sudo last command with `please`
 alias cp='cp -i'                                                # Confirm before overwriting something
@@ -21,8 +23,9 @@ alias gitu='git add . && git commit && git push'
 alias gits='git status'
 alias gitc='git commit'
 alias gita='git add'
-alias ls='exa'                                                  # Colourful ls
+alias ls='exa -a'                                                  # Colourful ls
 alias ll='exa -alF'                                             # Colourful ll
+alias zyp='zypper'
 
 # Use terminal colours
 set -gx fish_color_autosuggestion      brblack # Autosuggestion
@@ -72,4 +75,4 @@ set VISUAL $EDITOR
 
 set fish_greeting   # Disable welcome message
 
-starship init fish | source
+# starship init fish | source
