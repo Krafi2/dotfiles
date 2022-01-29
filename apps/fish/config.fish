@@ -1,18 +1,6 @@
-# Fix flatpak environment
-set -l xdg_data_home $XDG_DATA_HOME ~/.local/share
-set -gx --path XDG_DATA_DIRS $xdg_data_home[1]/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
-
-for flatpakdir in ~/.local/share/flatpak/exports/bin /var/lib/flatpak/exports/bin
-    if test -d $flatpakdir
-        contains $flatpakdir $PATH; or set -a PATH $flatpakdir
-    end
-end
-
 if status is-interactive
-    # Commands to run in interactive sessions can go here
+    starship init fish | source
 end
-
-set -gx PATH "$HOME/.cargo/bin" $PATH;
 
 ## Alias section
 alias please='eval "sudo $history[1]";history delete --exact --case-sensitive please' # Sudo last command with `please`
@@ -27,7 +15,7 @@ alias ls='exa -a'                                                  # Colourful l
 alias ll='exa -alF'                                             # Colourful ll
 alias zyp='zypper'
 
-# Use terminal colours
+## Use terminal colours
 set -gx fish_color_autosuggestion      brblack # Autosuggestion
 set -gx fish_color_cancel              -r
 set -gx fish_color_command             brgreen
@@ -55,7 +43,7 @@ set -gx fish_pager_color_description   yellow       # Command description
 set -gx fish_pager_color_prefix        brblue       # Completion common prefix
 set -gx fish_pager_color_progress      brwhite --background=cyan # Completion progress
 
-# Color man pages
+## Color man pages
 # Force groff to use weird custom escape sequences when run by man. Coloring by less doesn't seem to work otherwise.
 set -gx MANROFFOPT '-c'
 set -gx MANPAGER 'less -R -s -M +Gg'
@@ -72,7 +60,6 @@ set -gx LESS_TERMCAP_mb (printf "\e[01;31m")     # Start blink
 # Set EDITOR
 set EDITOR nvim
 set VISUAL $EDITOR
+set -gx PATH "$HOME/.cargo/bin" $PATH;
 
-set fish_greeting   # Disable welcome message
-
-starship init fish | source
+set fish_greeting # Disable the welcome message
