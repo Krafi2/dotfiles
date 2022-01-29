@@ -75,4 +75,4 @@ set VISUAL $EDITOR
 
 set fish_greeting   # Disable welcome message
 
-# starship init fish | source
+starship init fish | source
