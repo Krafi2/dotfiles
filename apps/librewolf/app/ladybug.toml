@@ -1,0 +1,2 @@
+target = "~/.var/app/io.gitlab.librewolf-community"
+deps = ["/setup"]
