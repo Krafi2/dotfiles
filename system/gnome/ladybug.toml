@@ -1,0 +1,2 @@
+target = "/var/tmp/ladybug-gnome"
+hook.post = "dconf load / < settings.ini"
