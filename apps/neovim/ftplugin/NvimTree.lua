@@ -1,0 +1,5 @@
+-- local fillchars = vim.o.fillchars:gsub("vert:.", "vert:▕", 1)
+-- print(fillchars)
+-- vim.api.nvim_win_set_option(0, "fillchars", fillchars)
+-- vim.wo.fillchars = "vert:▕"
+-- vim.api.nvim_command "set b:fillchars+='vert:.'"
