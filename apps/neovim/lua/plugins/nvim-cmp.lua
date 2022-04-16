@@ -13,11 +13,6 @@ cmp.setup {
         },
     },
 
-    documentation = {
-        border = "single",
-        winhighlight = "NormalFloat:CompeDocumentation,FloatBorder:CompeDocumentationBorder",
-    },
-
     sorting = {
         priority_weight = 3,
     },
