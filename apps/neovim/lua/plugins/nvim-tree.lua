@@ -10,6 +10,11 @@ tree.setup {
     git = {
         ignore = false,
     },
+    renderer = {
+        nvim_tree_indent_markers = {
+            enable = true,
+        },
+    }
 }
 
 local function is_tree(bufnr)
