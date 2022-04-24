@@ -106,7 +106,7 @@ wk.register(mapping, { mode = "t" })
 -- Leader mappings
 mapping = {
     q = { "<C-w>q", "Close" },
-    e = { ":NvimTreeToggle<CR>", "Toggle explorer" },
+    e = { ":Neotree toggle<CR>", "Toggle explorer" },
     f = { ":Telescope find_files<CR>", "Find" },
     c = { ":BufferClose<CR>", "Close buffer" },
     h = { ":nohlsearch<CR>", "Cancel search" },

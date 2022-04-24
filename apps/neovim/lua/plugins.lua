@@ -34,7 +34,14 @@ return require("packer").startup(function()
     plugin { "lewis6991/gitsigns.nvim" }
     plugin { "romgrk/barbar.nvim" }
     plugin { "kyazdani42/nvim-web-devicons" }
-    plugin { "kyazdani42/nvim-tree.lua", requires = "nvim-web-devicons" }
+    plugin {
+        "nvim-neo-tree/neo-tree.nvim",
+        requires = {
+            "nvim-lua/plenary.nvim",
+            "kyazdani42/nvim-web-devicons",
+            "MunifTanjim/nui.nvim"
+        }
+    }
     plugin { "ray-x/lsp_signature.nvim" }
     plugin { "folke/zen-mode.nvim" }
     plugin { "famiu/feline.nvim", after = "lbase16.nvim" }
