@@ -1,0 +1,16 @@
+unit {
+	name: Main
+	desc: Main unit
+	members: [
+		# signal
+		# discord
+		# spotify
+		firefox
+		fish
+		git
+		gnome
+		qt5ct
+		rust
+		helix
+	]
+}

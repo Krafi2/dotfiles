@@ -1,0 +1,8 @@
+unit {
+	name: Discord
+	desc: Install discord
+}
+
+packages(provider: flatpak) [
+	com.discordapp.Discord
+]

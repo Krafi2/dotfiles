@@ -1,0 +1,9 @@
+unit {
+	name: Firefox
+	desc: Firefox preferences
+}
+
+files(target: ~/.mozilla/firefox) [
+	prefs.js
+	addons.json
+]

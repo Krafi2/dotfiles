@@ -1,0 +1,8 @@
+unit {
+	name: Spotify
+	desc: Install spotify
+}
+
+packages(provider: flatpak) [
+	com.spotify.Client
+]

@@ -1,0 +1,16 @@
+unit {
+	name: Gnome config
+	desc: Configure gnome's environment
+}
+
+packages(provider: zypper) [
+	dconf
+]
+
+deploy {{
+	dconf load / < settings.ini
+}}
+
+capture {{
+	dconf dump / > settings.ini
+}}
