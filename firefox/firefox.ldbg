@@ -3,7 +3,11 @@ unit {
 	desc: Firefox preferences
 }
 
-files(target: ~/.mozilla/firefox) [
+files(target: ~/.mozilla/firefox/rw52qk0l.default-release) [
 	prefs.js
 	addons.json
+]
+
+files(target: ~/.mozilla/firefox) [
+	profiles.ini
 ]
