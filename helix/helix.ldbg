@@ -12,3 +12,8 @@ packages(provider: zypper) [
 files(target: ~/.config/helix) [
 	config.toml
 ]
+
+# The helix-runtime package is currently a bit broken and cannot find the runtime
+install {{
+	ln -s /usr/lib64/helix/runtime ~/.config/helix/runtime
+}}
