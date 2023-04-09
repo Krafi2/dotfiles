@@ -10,5 +10,5 @@ packages(provider: zypper) [
 
 files(target: ~/.config/fish) [
 	config.fish
-	functions/fish_prompt.fish
+	conf.d/prompt.fish
 ]
