@@ -1,10 +1,12 @@
 unit {
 	name: Git
 	desc: Git package and config
+	topic: devel
 }
 
 packages(provider: zypper) [
 	git
+	git-delta
 ]
 
 files(target: ~/.config/git) [

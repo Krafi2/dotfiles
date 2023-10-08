@@ -3,6 +3,15 @@ set -x EDITOR helix
 set -x VISUAL $EDITOR
 set fish_greeting # Disable the welcome message
 
+# Enable colorful less output
+set -x PAGER 'less -R --use-color -Dd+b -Dug -DSkm -DPky'
+set -x MANPAGER $PAGER
+alias less=$MANPAGER
+set -x MANROFFOPT '-c'
+
+# Set up bat
+set -x BAT_THEME 'ansi'
+
 # Alias section
 alias please='eval "sudo $history[1]";history delete --exact --case-sensitive please' # Sudo last command with `please`
 alias cp='cp -i'                                                # Confirm before overwriting something
@@ -12,9 +21,10 @@ alias gitu='git add . && git commit && git push'
 alias gits='git status'
 alias gitc='git commit'
 alias gita='git add'
-alias ls='exa -a'                                               # Colourful ls
-alias ll='exa -alF'                                             # Colourful ll
+alias ls='eza -a'                                               # Colourful ls
+alias ll='eza -alF'                                             # Colourful ll
 alias zyp='zypper'
+alias cat='bat'
 
 # Use terminal colours
 set -g fish_color_autosuggestion      brblack # Autosuggestion
@@ -47,16 +57,3 @@ set -g fish_pager_color_progress      brwhite --background=cyan # Completion pro
 # Configure prompt
 set -g __fish_git_prompt_show_informative_status
 
-# Force groff to use weird custom escape sequences when run by man. Coloring by less doesn't seem to work otherwise.
-set -gx MANROFFOPT '-c'
-set -gx MANPAGER 'less -R -s -M +Gg'
-set -gx PAGER 'less -R'
-
-# Color man pages
-set -gx LESS_TERMCAP_md (printf "\e[01;34m")     # Start bold effect
-set -gx LESS_TERMCAP_me (printf "\e[0m")         # Stop bold effect
-set -gx LESS_TERMCAP_us (printf "\e[01;32m")     # Start underline
-set -gx LESS_TERMCAP_ue (printf "\e[0m")         # Stop underline
-set -gx LESS_TERMCAP_so (printf "\e[01;40;33m")  # Start reverse video
-set -gx LESS_TERMCAP_se (printf "\e[0m")         # Stop  reverse video
-set -gx LESS_TERMCAP_mb (printf "\e[01;31m")     # Start blink

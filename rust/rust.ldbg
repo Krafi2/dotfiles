@@ -6,13 +6,9 @@ unit {
 
 packages(provider: zypper) [
 	rustup
+	mold
 ]
 
 files(target: ~/.cargo) [
 	config.toml
 ]
-
-deploy {{
-	rustup default stable
-	rustup component add rust-analyzer
-}}

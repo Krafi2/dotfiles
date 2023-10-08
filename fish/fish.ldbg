@@ -1,11 +1,12 @@
 unit {
 	name: Fish
 	desc: Fish shell
+	topic: devel
 }
 
 packages(provider: zypper) [
 	fish
-	exa
+	eza
 ]
 
 files(target: ~/.config/fish) [

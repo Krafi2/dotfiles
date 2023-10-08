@@ -1,6 +1,7 @@
 unit {
 	name: qt5ct
 	desc: Configure qt theme using qt5ct
+	topic: shell
 }
 
 packages(provider: zypper) [
