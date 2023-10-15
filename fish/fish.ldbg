@@ -13,3 +13,7 @@ files(target: ~/.config/fish) [
 	config.fish
 	conf.d/prompt.fish
 ]
+
+files(target: ~/) [
+	.bashrc
+]
