@@ -25,6 +25,7 @@ alias ls='eza -a'                                               # Colourful ls
 alias ll='eza -alF'                                             # Colourful ll
 alias zyp='zypper'
 alias cat='bat'
+alias diff='delta'
 
 # Use terminal colours
 set -g fish_color_autosuggestion      brblack # Autosuggestion

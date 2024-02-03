@@ -7,6 +7,8 @@ unit {
 packages(provider: zypper) [
 	fish
 	eza
+	bat
+	delta
 ]
 
 files(target: ~/.config/fish) [
