@@ -1,10 +1,10 @@
 unit {
 	name: qt5ct
 	desc: Configure qt theme using qt5ct
-	topic: shell
+	topic: desktop
 }
 
-packages(provider: zypper) [
+packages(provider: pkit) [
 	qt5ct
 ]
 

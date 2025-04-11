@@ -1,9 +1,11 @@
 unit {
 	name: Wezterm
 	desc: Wezterm package and config
+	topic: apps
+	disabled: yes
 }
 
-packages(provider: zypper) {
+packages(provider: pkit) {
 	wezterm
 }
 

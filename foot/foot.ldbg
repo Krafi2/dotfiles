@@ -1,12 +1,12 @@
 unit {
 	name: Foot Terminal
 	desc: Foot package and config
-	topic: devel
+	topic: apps
+	disabled: yes
 }
 
-packages(provider: zypper) [
+packages(provider: pkit) [
 	foot
-	foot-themes
 ]
 
 files(target: ~/.config/foot) [

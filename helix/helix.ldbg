@@ -4,9 +4,8 @@ unit {
 	topic: devel
 }
 
-packages(provider: zypper) [
+packages(provider: pkit) [
 	helix
-	helix-runtime
 ]
 
 files(target: ~/.config/helix) [

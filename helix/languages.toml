@@ -1,4 +1,14 @@
 [[language]]
+name = "rust"
+
+[language-server.rust-analyzer.rust-analyzer]
+imports.granularity.group = "module"
+imports.granularity.enforce = true
+cargo.buildScripts.enable = true
+procMacro.enable = false
+diagnostics.experimental.enable = true
+
+[[language]]
 name = "c"
 auto-format = true
 indent = { tab-width = 4, unit = "    " }
@@ -10,4 +20,42 @@ indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "yaml"
-file-types = [".clangd", ".clang-format"]
+auto-format = true
+indent = { tab-width = 4, unit = "    " }
+file-types = [".clangd", ".clang-format", ".clang-tidy"]
+
+[[language]]
+name = "python"
+auto-format = true
+language-servers = [ "pyright", "ruff" ]
+
+[language-server.ruff]
+command = "ruff"
+args = ["server", "--preview"]
+
+[[language]]
+name = "javascript"
+auto-format = true
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "html"
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "html"] }
+indent = { tab-width = 2, unit = "  " }
+
+[language-server.air]
+command = "air"
+args = ["language-server"]
+
+[[language]]
+name = "rmarkdown"
+indent = { tab-width = 2, unit = "  " }
+language-servers = ["r"]
+auto-format = true
+
+[[language]]
+name = "r"
+indent = { tab-width = 2, unit = "  " }
+language-servers = ["air", "r"]
+auto-format = true

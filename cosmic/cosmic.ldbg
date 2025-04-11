@@ -1,0 +1,13 @@
+unit {
+	name: Cosmic
+	desc: Cosmic desktop environment
+	topic: desktop
+}
+
+packages(provider: pkit) [
+	cosmic-epoch
+]
+
+files(target: ~/.config/cosmic) [
+	config
+]

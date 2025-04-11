@@ -1,6 +1,7 @@
 unit {
 	name: Spotify
 	desc: Install spotify
+	topic: apps
 }
 
 packages(provider: flatpak) [

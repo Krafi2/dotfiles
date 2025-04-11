@@ -1,6 +1,7 @@
 unit {
 	name: Signal
 	desc: Install signal
+	topic: apps
 }
 
 packages(provider: flatpak) [

@@ -1,0 +1,16 @@
+unit {
+	name: R
+	topic: devel
+}
+
+packages(provider: pkit) [
+	R
+]
+
+deploy {{
+	sudo dnf copr enable iucar/cran
+}}
+
+remove {{
+	sudo dnf copr disable iucar/cran
+}}
