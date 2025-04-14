@@ -4,10 +4,10 @@ unit {
 	topic: devel
 }
 
-packages(provider: zypper) [
-	rustup
-	mold
-]
+# packages(provider: zypper) [
+# 	rustup
+# 	mold
+# ]
 
 files(target: ~/.cargo) [
 	config.toml

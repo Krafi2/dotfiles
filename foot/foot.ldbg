@@ -4,10 +4,10 @@ unit {
 	topic: devel
 }
 
-packages(provider: zypper) [
-	foot
-	foot-themes
-]
+# packages(provider: zypper) [
+# 	foot
+# 	foot-themes
+# ]
 
 files(target: ~/.config/foot) [
 	foot.ini

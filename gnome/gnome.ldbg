@@ -4,9 +4,9 @@ unit {
 	topic: shell
 }
 
-packages(provider: zypper) [
-	# dconf
-]
+# packages(provider: zypper) [
+#	 dconf
+# ]
 
 deploy {{
 	# dconf load / < settings.ini

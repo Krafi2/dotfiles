@@ -3,9 +3,9 @@ unit {
 	desc: Wezterm package and config
 }
 
-packages(provider: zypper) {
-	wezterm
-}
+# packages(provider: zypper) {
+# 	wezterm
+# }
 
 files(target: ~/.config/wezterm) [
 	wezterm.lua
