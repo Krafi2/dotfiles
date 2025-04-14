@@ -1,0 +1,136 @@
+{
+    (
+        modifiers: [
+            Super,
+            Shift,
+        ],
+        key: "k",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "j",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "i",
+    ): Focus(Up),
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "o",
+    ): Focus(Right),
+    (
+        modifiers: [
+            Super,
+            Shift,
+        ],
+        key: "j",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+            Ctrl,
+            Shift,
+        ],
+        key: "i",
+    ): MoveToPreviousWorkspace,
+    (
+        modifiers: [
+            Super,
+            Ctrl,
+        ],
+        key: "e",
+    ): NextWorkspace,
+    (
+        modifiers: [
+            Super,
+            Ctrl,
+        ],
+        key: "i",
+    ): PreviousWorkspace,
+    (
+        modifiers: [
+            Super,
+            Shift,
+        ],
+        key: "h",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+            Ctrl,
+            Shift,
+        ],
+        key: "e",
+    ): MoveToNextWorkspace,
+    (
+        modifiers: [
+            Super,
+            Shift,
+        ],
+        key: "e",
+    ): Move(Down),
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "n",
+    ): Focus(Left),
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "h",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+            Shift,
+        ],
+        key: "o",
+    ): Move(Right),
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "k",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "e",
+    ): Focus(Down),
+    (
+        modifiers: [
+            Super,
+            Shift,
+        ],
+        key: "l",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+        ],
+        key: "l",
+    ): Disable,
+    (
+        modifiers: [
+            Super,
+            Shift,
+        ],
+        key: "n",
+    ): Move(Left),
+    (
+        modifiers: [
+            Super,
+            Shift,
+        ],
+        key: "i",
+    ): Move(Up),
+}

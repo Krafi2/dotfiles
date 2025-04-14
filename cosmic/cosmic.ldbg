@@ -8,6 +8,6 @@ packages(provider: pkit) [
 	cosmic-epoch
 ]
 
-files(target: ~/.config/cosmic) [
-	config
+files(target: ~/.config/) [
+	cosmic
 ]

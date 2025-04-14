@@ -1,0 +1,9 @@
+(
+    rules: "",
+    model: "pc105",
+    layout: "us",
+    variant: "colemak_dh",
+    options: Some("grp:win_space_toggle,caps:escape"),
+    repeat_delay: 300,
+    repeat_rate: 35,
+)
