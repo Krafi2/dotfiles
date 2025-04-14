@@ -2,16 +2,23 @@ unit {
 	name: Main
 	desc: Main unit
 	members: [
+		# Apps
 		# signal
 		# discord
 		# spotify
 		firefox
-		fish
+		wezterm
 		foot
+
+		# Devel
+		fish
 		git
-		gnome
-		qt5ct
 		rust
 		helix
+
+		# Desktop
+		gnome
+		cosmic
+		qt5ct
 	]
 }

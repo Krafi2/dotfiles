@@ -1,6 +1,7 @@
 unit {
 	name: Discord
 	desc: Install discord
+	topic: desktop
 }
 
 packages(provider: flatpak) [

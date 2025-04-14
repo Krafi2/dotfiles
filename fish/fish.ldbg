@@ -4,12 +4,12 @@ unit {
 	topic: devel
 }
 
-# packages(provider: zypper) [
-# 	fish
-# 	eza
-# 	bat
-# 	delta
-# ]
+packages(provider: pkit) [
+	fish
+	eza
+	bat
+	git-delta
+]
 
 files(target: ~/.config/fish) [
 	config.fish

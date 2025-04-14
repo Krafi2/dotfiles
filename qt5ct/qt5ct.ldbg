@@ -1,12 +1,12 @@
 unit {
 	name: qt5ct
 	desc: Configure qt theme using qt5ct
-	topic: shell
+	topic: desktop
 }
 
-# packages(provider: zypper) [
-# 	qt5ct
-# ]
+packages(provider: pkit) [
+	qt5ct
+]
 
 files(target: ~/.config/qt5ct) [
 	colors/Vimix-light.conf

@@ -4,10 +4,10 @@ unit {
 	topic: devel
 }
 
-# packages(provider: zypper) [
-# 	git
-# 	git-delta
-# ]
+packages(provider: pkit) [
+	git
+	git-delta
+]
 
 files(target: ~/.config/git) [
 	config

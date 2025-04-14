@@ -1,17 +1,24 @@
 unit {
 	name: Gnome config
 	desc: Configure gnome's environment
-	topic: shell
+	topic: desktop
+	disabled: yes
 }
 
+<<<<<<< HEAD
 # packages(provider: zypper) [
 #	 dconf
 # ]
+=======
+packages(provider: zypper) [
+	dconf
+]
+>>>>>>> 2a70d9860a1008f6609a588d0033cbd20955a482
 
 deploy {{
-	# dconf load / < settings.ini
+	dconf load / < settings.ini
 }}
 
 capture {{
-	# dconf dump / > settings.ini
+	dconf dump / > settings.ini
 }}

@@ -1,13 +1,13 @@
 unit {
 	name: Foot Terminal
 	desc: Foot package and config
-	topic: devel
+	topic: apps
+	disabled: yes
 }
 
-# packages(provider: zypper) [
-# 	foot
-# 	foot-themes
-# ]
+packages(provider: pkit) [
+	foot
+]
 
 files(target: ~/.config/foot) [
 	foot.ini
