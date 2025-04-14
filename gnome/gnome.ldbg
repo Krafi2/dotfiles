@@ -5,15 +5,9 @@ unit {
 	disabled: yes
 }
 
-<<<<<<< HEAD
-# packages(provider: zypper) [
-#	 dconf
-# ]
-=======
 packages(provider: zypper) [
 	dconf
 ]
->>>>>>> 2a70d9860a1008f6609a588d0033cbd20955a482
 
 deploy {{
 	dconf load / < settings.ini

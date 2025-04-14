@@ -5,9 +5,9 @@ unit {
 	disabled: yes
 }
 
-packages(provider: pkit) {
+packages(provider: pkit) [
 	wezterm
-}
+]
 
 files(target: ~/.config/wezterm) [
 	wezterm.lua
