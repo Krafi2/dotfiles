@@ -1,9 +1,7 @@
-theme = "onedark"
+theme = "kaolin-valley-dark"
 
 [editor]
-# idle-timeout = 100
 auto-format = true
-completion-replace = true
 color-modes = true
 end-of-line-diagnostics = "hint"
 
@@ -47,6 +45,8 @@ J="search_prev"
 "A-o"="expand_selection"
 O="no_op"
 q={q=":write-quit-all"}
+m={b="@mi`S\\{.*\\}\\n<ret>(,"} # Select code block
+Y="yank_to_clipboard"
 
 [keys.normal.space]
 t=":write"
