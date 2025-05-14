@@ -27,11 +27,12 @@ file-types = [".clangd", ".clang-format", ".clang-tidy"]
 [[language]]
 name = "python"
 auto-format = true
-language-servers = [ "pyright", "ruff" ]
+language-servers = ["ty"]
+# language-servers = [ "basedpyright", "ruff", "ty" ]
 
-[language-server.ruff]
-command = "ruff"
-args = ["server", "--preview"]
+[language-server.ty]
+command = "ty"
+args = ["server"]
 
 [[language]]
 name = "javascript"
@@ -59,3 +60,7 @@ name = "r"
 indent = { tab-width = 2, unit = "  " }
 language-servers = ["air", "r"]
 auto-format = true
+
+[[language]]
+name = "markdown"
+file-types = ["qmd"]

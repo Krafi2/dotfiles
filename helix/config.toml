@@ -20,8 +20,6 @@ display-signature-help-docs = false
 goto-reference-include-declaration = false
 
 [keys.normal]
-tab = "move_parent_node_end"
-S-tab = "move_parent_node_start"
 c=["trim_selections", "change_selection"]
 a=["append_mode", "collapse_selection"]
 esc=["collapse_selection", "keep_primary_selection"]
@@ -41,12 +39,14 @@ J="search_prev"
 "C-o"="jump_forward"
 "C-e"="half_page_down"
 "C-i"="half_page_up"
+"tab"="half_page_up"
 "A-n"="shrink_selection"
 "A-o"="expand_selection"
 O="no_op"
 q={q=":write-quit-all"}
 m={b="@mi`S\\{.*\\}\\n<ret>(,"} # Select code block
 Y="yank_to_clipboard"
+"A-q"="replay_macro"
 
 [keys.normal.space]
 t=":write"
