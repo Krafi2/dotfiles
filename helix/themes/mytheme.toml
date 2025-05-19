@@ -1,0 +1,135 @@
+# "tag" = { fg = "red" }
+"attribute" = { fg = "yellow" }
+"comment" = { fg = "gray0", modifiers = ["italic"] }
+"constant" = { fg = "light-green" }
+# "constant.numeric" = { fg = "gold" }
+# "constant.builtin" = { fg = "gold" }
+"constant.character.escape" = { fg = "gold" }
+"constructor" = { fg = "type" }
+"function" = { fg = "light-blue" }
+# "function.macro" = { fg = "purple" }
+"keyword" = { fg = "dark-green" }
+"label" = { fg = "dark-green" }
+"namespace" = { fg = "gold" }
+# "operator" = { fg = "purple" }
+"special" = { fg = "vivid-purple" }
+"string" = { fg = "purple" }
+"type" = { fg = "type" }
+"variable" = { fg = "vivid-red" }
+"variable.builtin" = { fg = "vivid-purple",  modifiers = ["italic"] }
+# "variable.parameter" = { fg = "red" }
+# "variable.other.member" = { fg = "red" }
+
+"markup.heading" = { fg = "dark-green" }
+"markup.quote" = { fg = "type" }
+"markup.raw" = { fg = "purple" }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+# "markup.list" = { fg = "red" }
+"markup.list" = { fg = "gray0", modifiers = ["bold"] }
+"markup.link.url" = { fg = "light-green", modifiers = ["underlined"]}
+"markup.link.text" = { fg = "dark-green" }
+
+"diff.plus" = "green"
+"diff.delta" = "gold"
+"diff.minus" = "red"
+
+"diagnostic.info".underline = { color = "blue", style = "curl" } 
+"diagnostic.hint".underline = { color = "green", style = "curl" } 
+"diagnostic.warning".underline = { color = "yellow", style = "curl" } 
+"diagnostic.error".underline = { color = "red", style = "curl" } 
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+"info" = { fg = "blue", modifiers = ["bold"] }
+"hint" = { fg = "green", modifiers = ["bold"] }
+"warning" = { fg = "yellow", modifiers = ["bold"] }
+"error" = { fg = "red", modifiers = ["bold"] }
+
+"ui.background" = { bg = "bg0" }
+"ui.virtual" = { fg = "grey1" }
+"ui.virtual.indent-guide" = { fg = "gray1" }
+# "ui.virtual.whitespace" = { fg = "light-gray" }
+# "ui.virtual.ruler" = { bg = "gray" }
+# "ui.virtual.inlay-hint" = { fg = "light-gray" }
+"ui.virtual.jump-label" = { modifiers = ["bold"] }
+
+"ui.cursor" = { fg = "white", modifiers = ["reversed"] }
+# "ui.cursor.primary" = { fg = "white", modifiers = ["reversed"] }
+"ui.cursor.match" = { modifiers = ["underlined"]}
+
+"ui.selection" = { bg = "selection1" }
+# "ui.selection.primary" = { bg = "selection1" }
+"ui.cursorline.primary" = { bg = "light-black" }
+
+"ui.highlight" = { bg = "bg1" }
+# "ui.highlight.frameline" = { bg = "#97202a" } TODO
+
+"ui.linenr" = { fg = "gray0" }
+"ui.linenr.selected" = { fg = "warn" }
+
+"ui.statusline" = { fg = "fg0", bg = "bg1" }
+"ui.statusline.inactive" = { fg = "gray0" }
+"ui.statusline.normal" = { fg = "bg1", bg = "blue", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "bg1", bg = "green", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "bg1", bg = "purple", modifiers = ["bold"] }
+
+"ui.bufferline" = { fg = "gray0", bg = "bg1" }
+"ui.bufferline.active" = { fg = "fg1", bg = "bg2" }
+# "ui.bufferline.background" = { bg = "light-black" }
+
+"ui.text" = { fg = "fg0" }
+# "ui.text.directory" = { fg = "pale-purple" }
+"ui.text.focus" = { fg = "fg1", bg = "bg1", modifiers = ["bold"] }
+
+"ui.help" = { fg = "fg0", bg = "bg2" }
+"ui.popup" = { bg = "bg2" }
+"ui.window" = { fg = "gray0" }
+"ui.menu" = { fg = "fg0", bg = "bg1" }
+"ui.menu.selected" = { fg = "fg1", bg = "bg3" }
+"ui.menu.scroll" = { fg = "gray0", bg = "bg1" }
+
+"ui.debug.breakpoint" = { fg = "red" }
+"ui.debug.active" = { fg = "green" }
+
+[palette]
+yellow = "#E5C07B"
+blue = "#61AFEF"
+red = "#E06C75"
+purple = "#cea2ca"
+green = "#98C379"
+gold = "#D19A66"
+cyan = "#56B6C2"
+# white = "#ABB2BF"
+# black = "#282C34"
+# light-black = "#2C323C"
+# gray = "#3E4452"
+# faint-gray = "#3B4048"
+# light-gray = "#5C6370"
+# linenr = "#4B5263"
+
+
+# fg0 = "#dcd5c3"
+# fg0 = "#eee6d3" # amber9
+fg0 = "#e2d4b4"
+fg1 = "#cea2ca" # magenta3
+bg0 = "#262221" # valley-dark-bg1
+bg1 = "#2e2a29" # valley-dark-bg2
+bg2 = "#332E2E"
+bg3 = "#383030" # valley-dark-bg4
+gray0 = "#635c4a" # valley-dark-comment
+gray1 = "#52413f" # brown2
+green0 = "#91f368" # harlequin3
+selection0 = "#ee7042" # vermilion3
+selection1 = "#402e2e" # red6
+type = "#eed891" # amber3
+hint = "#6bd9db" # cyan3
+info = "#41b0f3" # capri3
+warn = "#cfb05f" # amber1
+error = "#e84c58" # red3
+vivid-red = "#ef6787" # crimson3
+vivid-purple = "#c678dd"
+light-blue = "#7ed7e6"
+dark-green = "#49bdb0"
+light-green = "#53e6b5"
+dark-blue = "#9587dd"

@@ -11,4 +11,5 @@ packages(provider: pkit) [
 files(target: ~/.config/helix) [
 	config.toml
 	languages.toml
+	themes/mytheme.toml
 ]

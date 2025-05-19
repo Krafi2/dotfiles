@@ -63,4 +63,4 @@ auto-format = true
 
 [[language]]
 name = "markdown"
-file-types = ["qmd"]
+file-types = ["qmd", "md"]
