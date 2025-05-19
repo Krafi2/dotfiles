@@ -9,6 +9,7 @@ unit {
 		firefox
 		wezterm
 		foot
+		ghostty
 
 		# Devel
 		fish

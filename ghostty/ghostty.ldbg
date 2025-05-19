@@ -1,0 +1,9 @@
+unit {
+	name: Ghostty Terminal
+	desc: Terminal
+	topic: apps
+}
+
+files(target: ~/.config/ghostty) [
+	config
+]
