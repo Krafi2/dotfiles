@@ -35,6 +35,9 @@ end
 if type -q delta
     alias diff='delta'
 end
+if type -q jj
+    jj util completion fish | source
+end
 
 # Use terminal colours
 set -g fish_color_autosuggestion brblack # Autosuggestion
