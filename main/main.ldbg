@@ -16,6 +16,7 @@ unit {
 		git
 		rust
 		helix
+		julia
 
 		# Desktop
 		gnome

@@ -1,5 +1,6 @@
 unit {
 	name: Julia
+	desc: Julia development environment
 	topic: devel
 }
 
