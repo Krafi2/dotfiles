@@ -5,7 +5,7 @@ unit {
 }
 
 packages(provider: pkit) [
-	cosmic-epoch
+	cosmic-desktop
 ]
 
 files(target: ~/.config/) [
