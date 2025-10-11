@@ -7,14 +7,7 @@ packages(provider: pkit) [
 	julia
 ]
 
-files(target: ~/.local/bin) {
-	julia-lsp
-}
-
-deploy {{
-	chmod +x ~/.local/bin/julia-lsp
-	julia --startup-file=no --project=@helix-lsp -e 'import Pkg; Pkg.add(["LanguageServer", "PackageCompiler"]); Pkg.update(); using PackageCompiler; create_sysimage(:LanguageServer, sysimage_path=dirname(Pkg.Types.Context().env.project_file) * "/languageserver.so")'
-}}
-
-remove {{
+deploy(shell: [julia -e %c]) {{
+	import Pkg
+	Pkg.add(["LanguageServer"])
 }}

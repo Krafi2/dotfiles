@@ -72,7 +72,3 @@ auto-format = true
 [[language]]
 name = "julia"
 auto-format = true
-
-[language-server.julia]
-command = "julia-lsp"
-timeout = 60
