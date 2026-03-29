@@ -7,3 +7,7 @@ unit {
 files(target: ~/.config/ghostty) [
 	config
 ]
+
+files(target: ~/.local/share/applications) [
+	com.mitchellh.ghostty.desktop
+]
