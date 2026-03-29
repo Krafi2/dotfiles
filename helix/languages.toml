@@ -72,3 +72,37 @@ auto-format = true
 [[language]]
 name = "julia"
 auto-format = true
+
+[[language]]
+name = "typst"
+auto-format = true
+formatter = { command = "typstyle" }
+
+[[language]]
+name = "julia"
+language-servers = ["julia-lsp"]
+
+[formatter]
+command = "julia"
+timeout = 60
+args = [
+  "--startup-file=no",
+  "--history-file=no",
+  "--project",
+  "--quiet",
+  "-e",
+  "using JuliaFormatter; print(format_text(read(stdin, String)));",
+]
+
+[language-server.julia-lsp]
+command = "julia"
+args = [
+  "--project=@helix-lsp",
+  "--startup-file=no",
+  "--history-file=no",
+  "--quiet",
+  "-e",
+  "using LanguageServer; runserver()"
+] 
+
+
